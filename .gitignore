@@ -25,3 +25,6 @@ dist-ssr
 
 # Personal LinkedIn export (contains phone number)
 Profile.pdf
+
+# Local Netlify folder
+.netlify
