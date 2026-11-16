@@ -1,0 +1,98 @@
+export const darkTheme = {
+  colors: {
+    primary: '#95CCDD',
+    primaryDark: '#72B7CC',
+    secondary: '#4274D9',
+    accent: '#293681',
+    text: {
+      primary: '#D0E7E6',
+      secondary: '#A9C3CB',
+      muted: '#8199B8',
+    },
+    background: {
+      primary: '#0F1538',
+      secondary: '#161E4D',
+      tertiary: '#172052',
+      card: '#172052',
+      inverted: '#293681',
+    },
+    onAccent: '#0F1538',
+    onBright: '#FFFFFF',
+    invertedText: '#D0E7E6',
+    border: 'rgba(149, 204, 221, 0.24)',
+    borderStrong: 'rgba(149, 204, 221, 0.30)',
+    borderHair: 'rgba(149, 204, 221, 0.14)',
+    guide: 'rgba(149, 204, 221, 0.06)',
+    glow: 'rgba(66, 116, 217, 0.34)',
+    rowHover: 'rgba(149, 204, 221, 0.06)',
+    terminal: '#0A0F2C',
+    success: '#4ADE80',
+    error: '#F87171',
+    warning: '#FBBF24',
+  },
+  fonts: {
+    primary: "'Geist', system-ui, sans-serif",
+    mono: "'Geist Mono', ui-monospace, 'SF Mono', Menlo, monospace",
+    display: "'Bricolage Grotesque', 'Arial Black', system-ui, sans-serif",
+  },
+  breakpoints: {
+    mobile: '480px',
+    tablet: '768px',
+    desktop: '1024px',
+    wide: '1280px',
+  },
+  borderRadius: {
+    sm: '0.5rem',
+    md: '1rem',
+    lg: '1.75rem',
+    xl: '2.5rem',
+    pill: '999px',
+  },
+  shadows: {
+    sm: '0 10px 22px -10px rgba(3, 6, 28, 0.7)',
+    md: '0 16px 32px -14px rgba(3, 6, 28, 0.72)',
+    lg: '0 22px 44px -18px rgba(3, 6, 28, 0.75)',
+  },
+};
+
+export type Theme = typeof darkTheme;
+
+export const lightTheme: Theme = {
+  ...darkTheme,
+  colors: {
+    ...darkTheme.colors,
+    primary: '#293681',
+    primaryDark: '#1E2A66',
+    secondary: '#4274D9',
+    accent: '#131B52',
+    text: {
+      primary: '#111850',
+      secondary: '#38427A',
+      muted: '#515C8C',
+    },
+    background: {
+      primary: '#D0E7E6',
+      secondary: '#C1DDDC',
+      tertiary: '#EAF5F4',
+      card: '#EAF5F4',
+      inverted: '#131B52',
+    },
+    onAccent: '#D0E7E6',
+    invertedText: '#D0E7E6',
+    border: 'rgba(41, 54, 129, 0.22)',
+    borderStrong: 'rgba(41, 54, 129, 0.30)',
+    borderHair: 'rgba(41, 54, 129, 0.14)',
+    guide: 'rgba(41, 54, 129, 0.07)',
+    glow: 'rgba(66, 116, 217, 0.26)',
+    rowHover: 'rgba(41, 54, 129, 0.05)',
+    terminal: '#131B52',
+    success: '#16A34A',
+    error: '#DC2626',
+    warning: '#D97706',
+  },
+  shadows: {
+    sm: '0 10px 22px -10px rgba(41, 54, 129, 0.35)',
+    md: '0 16px 32px -14px rgba(41, 54, 129, 0.38)',
+    lg: '0 22px 44px -20px rgba(41, 54, 129, 0.45)',
+  },
+};
